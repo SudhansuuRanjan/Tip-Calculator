@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-cont">
+    <h3 class="logo">S P L I</h3>
+    <h3 class="logo">T T E R</h3>
+    </div>
+    <div class="main-cont">
+        <div class="left">
+            <div class="form">
+                <label for="bill">Bill</label><br>
+                <input type="number" min="0" for="bill" placeholder="0" class="bill" min="0" id="icon1">
+                 <br>
+                <label for="tip-percent">Select Tip%</label><br>
+                <div class="grid">
+                    <div class="row">
+                        <button class="five tip-percentbtn" value="0">0%</button>
+                        <button class="ten tip-percentbtn" value="5">5%</button>
+                        <button class="fifteen tip-percentbtn" value="10">10%</button>
+                    </div>
+                    <div class="row">
+                        <button class="five tip-percentbtn" value="15">15%</button>
+                        <button class="ten tip-percentbtn" value="20">20%</button>
+                        <input type="number" name="custom" id="custom" placeholder="Custom" min="0">
+                    </div>
+                </div>
+                <div class="low-id">
+                <label for="no-of-peoplr">Number of People</label><br>
+                <input type="number" name="no-of-people" id="number-of-people" min="1" placeholder="1">
+                </div>
+                <div class="button-submit"><button  class="submit" onclick="calculate()">Submit</button></div>
+            </div>
+            </div>
+            
+        <div class="right">
+            <div class="right-text-up">
+                 <div class="right-text1">
+                     <h3 class="tip-amount">Tip Amount</h3>
+                     <h4 class="per-person">/ person</h4>
+                 </div>
+                 <div class="right-text2">
+                     <h1 class="amount1">$0.00</h1>
+                 </div>
+            </div>
+            <div class="right-text-down">
+                <div class="right-text1">
+                    <h3 class="total-text">Total</h3>
+                    <h4 class="per-person">/ person</h4>
+                </div>
+                <div class="right-text2">
+                    <h1 class="amount2">$0.00</h1>
+                </div>
+           </div>
+           <div class="button"><button onclick="Reset()" class="reset">Reset</button></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
